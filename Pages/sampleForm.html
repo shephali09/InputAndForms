@@ -1,0 +1,67 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/sampleForm.css">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <header class="headerContainer">
+            <h1>HTML 5 Form Input fields</h1>
+        </header>
+        <div>
+            <label for="text">Text input for Name :</label>
+            <input type="text" id="text" name="text">
+            <error-output class="text-error"></error-output>
+        </div>
+        <div>
+            <label for="pwd">Password input type :</label>
+            <input type="password" id="pwd" name="pwd">
+            <error-output class="password-error"></error-output>
+
+        </div>
+        <div>
+            <label for="email">Email input type :</label>
+            <input type="email" id="email" name="email">
+            <error-output class="email-error"></error-output>
+
+        </div>
+        <div>
+            <label for="URL">URL input type :</label>
+            <input type="url" id="url" name="url">
+            <error-output class="url-error"></error-output>
+
+        </div>
+        <div>
+            <label for="number">Number input type :</label>
+            <input type="number" id="number" name="number">
+            <error-output class="number-error"></error-output>
+
+        </div>
+        <div>
+            <label for="tel">Telephone input type :</label>
+            <input type="tel" id="tel" name="tel">
+            <error-output class="telephone-error"></error-output>
+
+        </div>
+        <div>
+            <label for="search">Search input type :</label>
+            <input type="search" id="search" name="search">
+            <error-output class="search-error"></error-output>
+        </div>
+        <div class="nativeDataPicker">
+            <label for="Date">Choose a date and time :</label>
+            <input type="datetime-local" id="Date" name="Date">
+        </div>
+        <div>
+            <label for="Salary">Choose your Salary :</label>
+            <input type="range" id="Salary" name="Salary" min="300000" max="500000" value="400000">
+            <output for="Salary" class="salary-output">400000</output>
+        </div>
+        <button>Submit</button>
+    </form>
+    
+</body>
+</html>
