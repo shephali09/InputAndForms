@@ -91,6 +91,18 @@
                 emailError.textContent = "email is incorrect";
             }
         })
+         //UC3 mobile validation
+         const mobile = document.querySelector("#tel");
+        const mobileError = document.querySelector(".telephone-error");
+        mobile.addEventListener('input', function () {
+            let numberRegex = RegExp('^([0-9]{2}\\s)?[0-9]{10}$');
+            if (numberRegex.test(mobile.value)) {
+                mobileError.textContent = "";
+            }
+            else {
+                mobileError.textContent = "mobile is incorrect";
+            }
+        })
     </script>
     
 </body>
