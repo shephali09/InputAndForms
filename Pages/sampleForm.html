@@ -75,6 +75,22 @@
                 textError.textContent = "Name is incorrect";
             }
         })
+         //UC2 email validation
+         const email = document.querySelector("#email");
+        const emailError = document.querySelector(".email-error"); //^[a-z.+_-]+[.a-z0-9]*+@[a-z0-9]+[.a-z]+[.a-z0-9]*$
+
+        email.addEventListener('input', function () {
+            console.log(email.value);
+            //let emailRegex = RegExp('^[a-z.+_-]+[.a-z0-9]*+@[a-z0-9]+[.a-z]+[.a-z0-9]*$');
+            let emailRegex = RegExp("^[a-z.+_-]+[.a-z0-9]*@[a-z0-9]+[.a-z]+[.a-z0-9]*$");
+
+            if (emailRegex.test(email.value)) {
+                emailError.textContent = "";
+            }
+            else {
+                emailError.textContent = "email is incorrect";
+            }
+        })
     </script>
     
 </body>
