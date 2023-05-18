@@ -115,6 +115,25 @@
                 passwordError.textContent = "Password is incorrect";
             }
         })
+         //UC5 password validation
+         const passwords = document.querySelector("#pwd");
+        const passwordsError = document.querySelector(".password-error");
+        passwords.addEventListener('input', function () {
+            let passwordRegex = RegExp('(?=\\S+$).{8,20}$' + '(?=.*[A-Z])' + '(?=.*[0-9])' + '(?=.*[@#$%^&+=])'); //UC5Rule4
+            if (passwordRegex.test(passwords.value)) {
+                passwordsError.textContent = "";
+            }
+            else {
+                passwordsError.textContent = "Password is incorrect";
+            }
+        })
+        const Salary = document.querySelector("#Salary");
+        const output = document.querySelector('.salary-output');
+
+        Salary.addEventListener('input', function () {
+            console.log(Salary.value);
+            output.textContent = Salary.value;
+        })
     </script>
     
 </body>
